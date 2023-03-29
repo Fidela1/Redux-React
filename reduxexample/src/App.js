@@ -2,12 +2,15 @@ import React from 'react';
 import Login from './Components/Login';
 import Logout from './Components/Logout';
 import './App.css'
+import { useSelector } from 'react-redux';
+import { selectUser } from './features/userSlice';
 
-function App() {
+const App = () =>{
+  const user = useSelector(selectUser)
   return (
     <div>
-  <Login />
-  <Logout />
+  {user ? <Logout /> : <Login /> }
+  
     </div>
   )
 }
