@@ -39,7 +39,7 @@ placeholder='password'
 value={password}
 onChange = {(e) => setPassword(e.target.value)}/>
 
-<button type='submit' className='submit_btn'>submit</button>
+<button type='submit' className='submit_btn'>Signin</button>
         </form>
       
     </div>
